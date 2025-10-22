@@ -2,23 +2,68 @@
     body {
         margin: 0;
         padding: 0;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Verdana, Tahoma, sans-serif;
+        background-color: black;
+        color: whitesmoke;
     }
 
     .grid-container {
-
+        display: grid;
+        grid-template-rows: 10% repeat(2, 1fr)
+        color: whitesmoke;
+        width: 100%;
+        
     }
 
     .header {
-
+        display: block;
+        text-align: center;
+    }
+    
+    .header h1 {
+        background-color: red;
+        padding: 7%;
+        margin: auto;
+        
     }
 
-    .navbar {
+    .nav {
+        display: none;
 
     }
 
     .main {
-
+        margin-top: 10%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
+    .cards {
+        display: grid;
+        grid-gap: 30px;
+        padding-bottom: 10px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr, 10%, 10%;
+        border: 1px solid white;
+        border-radius: 3px;
+    }
+
+    .card img {
+        max-width: 300px;
+        border-bottom: 3px solid red;
+    }
+
+    .card h3 {
+        font-style: italic;
+    }
+
+    .footer {
+ 
+    }
 }
